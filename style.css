@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.896);
+}
+#canvas{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    
+}
+
+.circle{
+    width: 40px;
+    height: 40px;   
+    border-radius: 50%;
+    position: absolute;
+    animation: circle 0.9s;
+    opacity: 0;
+}
+@keyframes circle{
+    from{
+        opacity: 0.5;
+    }
+    to{
+        transform: scale(3);
+        opacity: 0;
+    }
+}
